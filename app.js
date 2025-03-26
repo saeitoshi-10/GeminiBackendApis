@@ -8,7 +8,7 @@ import { generateGeminiSummary } from "./Controllers/ImageSummaryController.js";
 config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
 app.use(express.json());
 
