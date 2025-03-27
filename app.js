@@ -4,7 +4,7 @@ import upload from "./Middlewares/multerConfig.js"
 import { generateGeminiResponse } from "./Controllers/PromptController.js";
 import { generateGeminiChat } from "./Controllers/ChatController.js";
 import { generateGeminiSummary } from "./Controllers/ImageSummaryController.js";
-import { generateGeminiImage } from "./Controllers/ImageGeneratorController.js";
+import { generateGeminiImage } from "./Controllers/imageGeneratorController.js";
 
 config();
 
