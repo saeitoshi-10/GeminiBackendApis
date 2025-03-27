@@ -15,6 +15,7 @@ app.use(express.json());
 app.post("/prompt", generateGeminiResponse);
 app.post("/chat", generateGeminiChat);
 app.post("/image-summary", upload.single("image"), generateGeminiSummary);
+app.post("/imagen", generateGeminiImage);
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
