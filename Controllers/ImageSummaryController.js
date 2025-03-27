@@ -15,7 +15,7 @@ export const generateGeminiSummary = async (req, res) => {
     }
 
     const base64Image = imageToBase64(req.file.path);
-    const mimeType = imagePath.endsWith(".png") ? "image/png" : "image/jpeg";
+    const mimeType = (req.file.path).endsWith(".png") ? "image/png" : "image/jpeg";
 
     const model = genAI.getGenerativeModel({ model: process.env.MODEL_NAME });
     const result = await model.generateContent([
