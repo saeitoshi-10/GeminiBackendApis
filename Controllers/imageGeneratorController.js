@@ -7,7 +7,7 @@ config();
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const storage = new Storage();
-const bucketName = "oogle-bucket"; 
+const bucketName = "gsc-bucket-007"; 
 const bucket = storage.bucket(bucketName);
 
 export const generateGeminiImage = async (req, res) => {
