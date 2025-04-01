@@ -9,7 +9,7 @@ import { generateGeminiImage } from "./Controllers/imageGeneratorController.js";
 config();
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = 8080;
 
 app.use(express.json());
 
